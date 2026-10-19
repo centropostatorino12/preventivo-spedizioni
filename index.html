@@ -211,6 +211,7 @@ header{position:relative}
 </style>
 <base target="_blank">
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
 <header>
@@ -444,6 +445,19 @@ Centro Post@ di Giuliani Enrico · Via L.S. Cherubini 68/D – 10154 Torino · T
 </div>
 
 <div id="wizToast"></div>
+
+<!-- ═══ AREA PERSONALE: lucchetto che apre il kit protetto su Cloudflare ═══ -->
+<style>
+#btnAreaPersonale{position:fixed;right:16px;bottom:16px;z-index:90;width:52px;height:52px;border-radius:50%;border:2px solid rgba(255,204,0,.6);background:linear-gradient(135deg,var(--blu2),var(--blu-scuro));color:#fff;font-size:22px;cursor:pointer;box-shadow:0 6px 18px rgba(0,38,63,.35);opacity:.5;transition:opacity .2s,transform .2s}
+#btnAreaPersonale:hover{opacity:1;transform:scale(1.08)}
+</style>
+<button id="btnAreaPersonale" type="button" title="Area personale" aria-label="Area personale" onclick="window.open(KIT_URL,'_blank')">🔒</button>
+<script>
+/* ✏️ DOPO AVER CREATO IL SITO SU CLOUDFLARE, SOSTITUISCI IL LINK QUI SOTTO
+   (sarà qualcosa tipo: https://kit-tuo.pages.dev) */
+const KIT_URL = "https://kit-preventivi.pages.dev/";
+</script>
+
 <script>
 /* ══════════════════════════════════════════════════════════
    CONFIGURAZIONE (modificabile solo dal gestore)
